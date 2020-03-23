@@ -1,0 +1,15 @@
+{
+  "name": "sitewards/redirectpageifcustomernotloggedin",
+  "description": "This module is removing a block if the customer is not logged in",
+  "license": "proprietary",
+  "type": "magento2-module",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Sitewards\\RedirectPageIfCustomerNotLoggedIn\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}

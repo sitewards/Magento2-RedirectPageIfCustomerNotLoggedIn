@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category  Sitewards
+ * @package   Sitewards_RedirectPageIfCustomerNotLoggedIn
+ * @copyright Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+ * @contact   mail@sitewards.com
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="sitewards_redirectpageifcustomernotloggedin">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="label" xsi:type="string" translate="true">Restrict Page</item>
+                <item name="sortOrder" xsi:type="number">100</item>
+            </item>
+        </argument>
+        <field name="sitewards_restricted_customer_groups" formElement="multiselect">
+            <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">Magento\Customer\Model\Customer\Source\Group</item>
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">Page visible to Customer Groups</item>
+                    <item name="source" xsi:type="string">page</item>
+                    <item name="formElement" xsi:type="string">multiselect</item>
+                    <item name="default" xsi:type="string">0,32000</item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+</form>
