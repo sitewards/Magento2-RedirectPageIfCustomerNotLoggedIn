@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * @category  Sitewards
+ * @package   Sitewards_RedirectPageIfCustomerNotLoggedIn
+ * @copyright Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+ * @contact   mail@sitewards.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <type name="Magento\Cms\Model\PageRepository">
+        <plugin name="SitewardsRedirectPageIfCustomerNotLoggedInModelPluginPageRepository"
+                type="Sitewards\RedirectPageIfCustomerNotLoggedIn\Model\Plugin\Page"/>
+    </type>
+</config>

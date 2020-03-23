@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Adds dropdown to enable / disable extension
+ * Adds input field to enter pages which should be redirected if customer is not logged in
+ *
+ * @category  Sitewards
+ * @package   Sitewards_RedirectPageIfCustomerNotLoggedIn
+ * @copyright Copyright (c) Sitewards GmbH (http://www.sitewards.com)
+ * @contact   mail@sitewards.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sitewards" translate="label" sortOrder="666">
+            <label>Sitewards</label>
+        </tab>
+        <section id="sitewards_redirectpageifcustomernotloggedin" translate="label" type="text" sortOrder="100" showInDefault="1">
+            <label>Redirect Page If Customer Not Logged In</label>
+            <tab>sitewards</tab>
+            <resource>Sitewards_RedirectPageIfCustomerNotLoggedIn::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <attribute type="expanded">1</attribute>
+                <field id="extensionEnabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Extension</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
