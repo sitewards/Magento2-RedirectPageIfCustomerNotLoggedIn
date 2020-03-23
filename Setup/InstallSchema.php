@@ -24,7 +24,7 @@ class InstallSchema implements InstallSchemaInterface
         $setup->startSetup();
         $setup->getConnection()->addColumn(
             $setup->getTable('cms_page'),
-            'sitewards_restricted_customer_groups   ',
+            'sitewards_restricted_customer_groups',
             [
                 'type'     => Table::TYPE_TEXT,
                 'length'   => 255,
