@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to
 [Semantic Versioning](http://semver.org/).
 
+## 1.1.2
+
+### CHANGED
+
+- fix change log (this file)
+- update README
+
 ## 1.1.1
 
 ### CHANGED
@@ -22,13 +29,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - plugin for saving multiselect data
     - di.xml
     - Page.php
+- dockblock for constructor
+    - Config.php
 
 ### CHANGED
 
-- logic for redirection, use new or old settings
+- logic for redirection, use new settings
     - RedirectPage.php
-- add dockblock for constructor
-    - Config.php
     
 ### REMOVED
 
