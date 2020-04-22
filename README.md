@@ -1,6 +1,6 @@
-# Redirect Page If Customer Not Logged In
+# Magento2 - Redirect Page If Customer Not Logged In
 
-This extension allows to configure CMS pages individually to be only visible to certain customer groups, all customer groups or all site visitors (including not logged in users). In case a visitor does not belong to any allowed customer group, they will be redirected to the customer area, or to the login page, if they are not already logged in.
+This Magento 2 extension allows to configure CMS pages individually to be only visible to certain customer groups, all customer groups or all site visitors (including not logged in users). In case a visitor does not belong to any allowed customer group, they will be redirected to the customer area, or to the login page, if they are not already logged in.
 
 ## Installation
 
